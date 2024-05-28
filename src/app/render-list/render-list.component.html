@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table-container">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <th>{{ item.id }}</th>
+        <td>{{ item.title }}</td>
+        <td>{{ item.body }}</td>
+        <td>
+          <button class="action-btn" [routerLink]="['/update', item.id]">Update</button>
+          <button class="action-btn" (click)="deleteHandle(item.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

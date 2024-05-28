@@ -1,0 +1,33 @@
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.add-button {
+    background-color: #0e55a1;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.add-button:hover {
+    background-color: #57687b;
+}
